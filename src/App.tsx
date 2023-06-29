@@ -7,6 +7,7 @@ function App() {
       <p>Tony</p>
       <Title title="Component 1" description="description 1" />
       <Title title="Component 2" description="description 2" />
+      <button onClick={() => console.log("click")}>Click me</button>
     </div>
   );
 }

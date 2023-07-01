@@ -16,7 +16,6 @@ export function ActionCard({ title, children }: ActionCardProps) {
   return (
     <div className={styles.cardContainer}>
       <Headtitle>{title}</Headtitle>
-      <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{children}</p>
       <div className={styles.actions}>
         <button onClick={onButtonClick} className={styles.cancel}>

@@ -1,12 +1,16 @@
 import "./App.css";
-import { Title } from "./Title";
+import "./reset.css";
+import styles from "./App.module.css";
+import { ActionCard } from "./components/ActionCard";
 
 function App() {
   return (
-    <div>
+    <div className={styles.container}>
+      <ActionCard title="Are you sure ?">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim.
+      </ActionCard>
       <p>Tony</p>
-      <Title title="Component 1" description="description 1" />
-      <Title title="Component 2" description="description 2" />
+
       <button onClick={() => console.log("click")}>Click me</button>
     </div>
   );

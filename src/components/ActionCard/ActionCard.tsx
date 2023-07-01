@@ -1,10 +1,12 @@
 import { ReactNode, useState } from "react";
 import styles from "./styles.module.css";
+import { Headtitle } from "../HeadTitle";
 
 interface ActionCardProps {
   title: string;
   children: ReactNode;
 }
+
 export function ActionCard({ title, children }: ActionCardProps) {
   const [number, setNumber] = useState(0);
   const onButtonClick = () => {
@@ -13,6 +15,7 @@ export function ActionCard({ title, children }: ActionCardProps) {
 
   return (
     <div className={styles.cardContainer}>
+      <Headtitle>{title}</Headtitle>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{children}</p>
       <div className={styles.actions}>

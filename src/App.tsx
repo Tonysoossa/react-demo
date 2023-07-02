@@ -8,15 +8,20 @@ import { useState } from "react";
 
 function App() {
   const [show, setShow] = useState<boolean>(false);
-
+  const [showDeleteM, setShowDeleteM] = useState<boolean>(false);
   return (
     <div className={styles.container}>
-      <ClickMe onClick={() => setShow(true)} title="Tony" />
+      {!showDeleteM && <ClickMe onClick={() => setShow(true)} title="Tony" />}
       {show && (
         <ActionCard
           onCancelClick={() => {
             setShow(false);
             console.log("You did click on Cancel!");
+          }}
+          onDeleteClick={() => {
+            setShow(false);
+            setShowDeleteM(true);
+            console.log("You did click on Delete!");
           }}
           title="Are you sure ?"
         >
@@ -24,7 +29,7 @@ function App() {
           enim.
         </ActionCard>
       )}
-      <DeleteMessage message="Delete completed !" />
+      {showDeleteM && <DeleteMessage message="Delete completed !" />}
     </div>
   );
 }

@@ -11,6 +11,12 @@
 
 # Retours : 
 
- - 1: Le dossier clickMeCard est mal nommé, il devrait avoir une majuscule
+ <!-- - 1: Le dossier clickMeCard est mal nommé, il devrait avoir une majuscule
  - 2: Dans le fichier de style `ClickMeCard.module.css`  -> Ca sert a rien de prefix toutes les classes avec le nom du composant
- - 3: Dans `App.tsx` -> Tu peux auto-close le tag du composant ClickMe si il n'a pas de children.
+ - 3: Dans `App.tsx` -> Tu peux auto-close le tag du composant ClickMe si il n'a pas de children. -->
+
+ # Exercice 2 :
+
+ - Passer le useState conter dans le bouton click me (le supprimer du bouton delete)
+
+ - 

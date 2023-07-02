@@ -6,5 +6,5 @@ interface HeadTitleProps {
 }
 
 export function Headtitle({ children }: HeadTitleProps) {
-  return <h1 className={styles.headTitle}>{children}</h1>;
+  return <h1 className={styles.headTitle}> {children} </h1>;
 }

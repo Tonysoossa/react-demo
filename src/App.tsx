@@ -3,6 +3,7 @@ import "./reset.css";
 import styles from "./App.module.css";
 import { ActionCard } from "./components/ActionCard";
 import { ClickMe } from "./components/ClickMeCard";
+import { DeleteMessage } from "./components/DeleteMessage";
 import { useState } from "react";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           enim.
         </ActionCard>
       )}
+      <DeleteMessage message="Delete completed !" />
     </div>
   );
 }

@@ -12,7 +12,13 @@ function App() {
     <div className={styles.container}>
       <ClickMe onClick={() => setShow(true)} title="Tony" />
       {show && (
-        <ActionCard title="Are you sure ?">
+        <ActionCard
+          onCancelClick={() => {
+            setShow(false);
+            console.log("You did click on Cancel!");
+          }}
+          title="Are you sure ?"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           enim.
         </ActionCard>

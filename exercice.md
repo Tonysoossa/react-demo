@@ -19,4 +19,8 @@
 
  <!-- - Passer le useState conter dans le bouton click me (le supprimer du bouton delete) -->
 
- - 
+ <!-- - show 'ActionCard' when the 'ClickMe' button is true -->
+
+ -'cancel' button action make 'ActionCard' component back hiding(false status) 
+ 
+ - the 'Delete' button deleting the 'ClickMe' component adding an alert message saying 'delete complete' (new component containing the follow message ?)

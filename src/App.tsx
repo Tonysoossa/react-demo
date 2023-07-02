@@ -2,6 +2,7 @@ import "./App.css";
 import "./reset.css";
 import styles from "./App.module.css";
 import { ActionCard } from "./components/ActionCard";
+import { ClickMe } from "./components/ClickMeCard";
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <ActionCard title="Are you sure ?">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim.
       </ActionCard>
-      <p>Tony</p>
-
-      <button onClick={() => console.log("click")}>Click me</button>
+      <ClickMe title="Tony"/>
     </div>
   );
 }

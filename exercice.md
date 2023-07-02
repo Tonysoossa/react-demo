@@ -17,6 +17,6 @@
 
  # Exercice 2 :
 
- - Passer le useState conter dans le bouton click me (le supprimer du bouton delete)
+ <!-- - Passer le useState conter dans le bouton click me (le supprimer du bouton delete) -->
 
  - 

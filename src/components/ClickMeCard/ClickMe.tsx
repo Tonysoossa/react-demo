@@ -1,14 +1,16 @@
 import styles from "./ClickMe.module.css";
-import { useState } from "react";
+import { MouseEvent, MouseEventHandler, useState } from "react";
 interface ClickMeProps {
   title: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export function ClickMe({ title }: ClickMeProps) {
+export function ClickMe({ title, onClick }: ClickMeProps) {
   const [number, setNumber] = useState(0);
-  const onButtonClick = () => {
+  const onButtonClick = (e: MouseEvent<HTMLButtonElement>) => {
     setNumber(number + 1);
     console.log("You did click on me !");
+    if (onClick) onClick(e);
   };
 
   return (

@@ -8,21 +8,26 @@
 
 <!-- - Utiliser ce composant à la place du h1 dans le composant ActionCard (celui qui affiche "Are you sure ?") -->
 
-
-# Retours : 
+# Retours :
 
  <!-- - 1: Le dossier clickMeCard est mal nommé, il devrait avoir une majuscule
  - 2: Dans le fichier de style `ClickMeCard.module.css`  -> Ca sert a rien de prefix toutes les classes avec le nom du composant
  - 3: Dans `App.tsx` -> Tu peux auto-close le tag du composant ClickMe si il n'a pas de children. -->
 
- # Exercice 2 :
+# Exercice 2 :
 
- <!-- - Passer le useState conter dans le bouton click me (le supprimer du bouton delete) -->
+ <!-- - 1: Passer le useState conter dans le bouton click me (le supprimer du bouton delete) -->
 
- <!-- - show 'ActionCard' when the 'ClickMe' button is true -->
+ <!-- - 2: show 'ActionCard' when the 'ClickMe' button is true -->
 
- <!-- -'cancel' button action make 'ActionCard' component back hiding(false status)  -->
+ <!-- - 3: 'cancel' button action make 'ActionCard' component back hiding(false status)  -->
 
- -new component containing the 'Delete complete' message
+ <!-- - 4: new component containing the 'Delete complete' message -->
 
- -'Container' component adding an alert message saying 'delete complete' 
+ <!-- - 5: 'Container' component adding an alert message saying 'delete complete'  -->
+
+# Exercice 3:
+
+- 1: Create a go back home button (reset, not refresh !)
+
+- 2: Create a head site bar, and a footer bar.

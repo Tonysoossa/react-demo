@@ -1,4 +1,4 @@
-import styles from "./ClickMe.module.css";
+import styles from "./clickMe.module.css";
 import { MouseEvent, MouseEventHandler, useState } from "react";
 
 interface ClickMeProps {

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "./HeadTitle.module.css";
+import styles from "./headTitle.module.css";
 
 interface HeadTitleProps {
   children: ReactNode;

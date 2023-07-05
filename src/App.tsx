@@ -1,4 +1,5 @@
-import "./App.css";
+import "./app.css";
+
 import "./reset.css";
 import styles from "./app.module.css";
 import { ActionCard } from "./components/ActionCard";
@@ -7,19 +8,30 @@ import { DeleteMessage } from "./components/DeleteMessage";
 import { useState } from "react";
 import { ResetButton } from "./components/ResetButton";
 
+
 function App() {
   const [show, setShow] = useState<boolean>(false);
   const [showDeleteM, setShowDeleteM] = useState<boolean>(false);
+  const [number, setNumber] = useState(0);
   return (
     <div className={styles.container}>
-      
       <ResetButton
         onResetClick={() => {
+          setShow(false);
+          setShowDeleteM(false);
+          setNumber(0);
           console.log("reset");
         }}
         title="Reload page"
       />
-      {!showDeleteM && <ClickMe onClick={() => setShow(true)} title="Tony" />}
+      {!showDeleteM && (
+        <ClickMe
+          onClick={() => setShow(true)}
+          number={number}
+          setNumber={setNumber}
+          title="Tony"
+        />
+      )}
       {show && (
         <ActionCard
           onCancelClick={() => {
@@ -37,6 +49,7 @@ function App() {
           enim.
         </ActionCard>
       )}
+
       {showDeleteM && <DeleteMessage message="Delete completed !" />}
     </div>
   );

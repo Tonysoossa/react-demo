@@ -1,0 +1,8 @@
+.upperHead {
+  display: flex;
+  position: absolute;
+  flex-direction: flex-start;
+  background-color: white;
+  color: black;
+  width: fit-content;
+}

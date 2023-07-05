@@ -1,8 +1,9 @@
 .upperHead {
   display: flex;
-  position: absolute;
-  flex-direction: flex-start;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   color: black;
-  width: fit-content;
+  width: 100%;
+  padding: 1rem;
 }

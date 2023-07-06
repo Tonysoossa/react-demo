@@ -14,17 +14,8 @@ function App() {
   const [number, setNumber] = useState(0);
   return (
     <>
-      <UpperHead title="gang" />
+      <UpperHead title="this is a nav bar" />
       <div className={styles.container}>
-        <ResetButton
-          onResetClick={() => {
-            setShow(false);
-            setShowDeleteM(false);
-            setNumber(0);
-            console.log("reset");
-          }}
-          title="Reload page"
-        />
         {!showDeleteM && (
           <ClickMe
             onClick={() => setShow(true)}
@@ -50,8 +41,16 @@ function App() {
             enim.
           </ActionCard>
         )}
-
         {showDeleteM && <DeleteMessage message="Delete completed !" />}
+        <ResetButton
+          onResetClick={() => {
+            setShow(false);
+            setShowDeleteM(false);
+            setNumber(0);
+            console.log("reset");
+          }}
+          title="Reload page"
+        />
       </div>
     </>
   );

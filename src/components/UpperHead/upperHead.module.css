@@ -4,6 +4,6 @@
   align-items: center;
   background-color: white;
   color: black;
-  width: 100%;
+  /* width: fit-content; */
   padding: 1rem;
 }

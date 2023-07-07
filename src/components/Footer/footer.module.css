@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: violet;
+  padding: 1rem;
+}
+
+.link {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+
+.link:hover {
+  color: red;
+}

@@ -6,7 +6,7 @@ export function Footer() {
       <a
         className={styles.link}
         href="https://github.com/Tonysoossa"
-        target="blank"
+        target="_blank"
       >
         Visit Github:
       </a>
